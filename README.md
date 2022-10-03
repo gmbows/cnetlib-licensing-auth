@@ -3,7 +3,7 @@ A software licensing client and authority built using cnetlib
 
 ## Example
 
-A Windows client requesting license validation from a Google Cloud Platform Linux VM running the authority
+A Windows client requesting license validation from a Google Cloud Platform Linux VM running the authority server
 ![Auth](https://raw.githubusercontent.com/gmbows/cnetlib-licensing-auth/main/validauth.png)
 
 ## Usage
