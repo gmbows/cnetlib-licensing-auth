@@ -10,11 +10,13 @@ A Windows client requesting license validation from a Google Cloud Platform Linu
 
 To request validation for a license in default file `./auth/license`:
 ```cpp
+
 CN::AuthClient client = CN::AuthClient(); //Default port 5555
 this->client.add_typespec_handler((CN::DataType)LicenseValid,[&](CN::UserMessage *msg) {
   gcutils::print("CLIENT License validated: ",msg->str());
 });
 
+//Message body contains reason for failure (invalid/reused key)
 this->client.add_typespec_handler((CN::DataType)LicenseInvalid,[&](CN::UserMessage *msg) {
   gcutils::print("CLIENT License NOT validated: ",msg->str());
 });
