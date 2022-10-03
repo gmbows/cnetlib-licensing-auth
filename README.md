@@ -1,6 +1,11 @@
 # cnetlib-licensing-auth
 A software licensing client and authority built using cnetlib
 
+## Example
+
+A Windows client requesting license validation from a Google Cloud Platform Linux VM running the authority
+![Auth](https://raw.githubusercontent.com/gmbows/cnetlib-licensing-auth/main/validauth.png)
+
 ## Usage
 
 To request validation for a license in default file `./auth/license`:
