@@ -8,7 +8,7 @@ A Windows client requesting license validation from a Google Cloud Platform Linu
 
 ## Usage
 
-To request validation for a license in default file `./auth/license`:
+To request validation from a validation server at address `validation_authority` for a license contained in default file `./auth/license`:
 ```cpp
 
 CN::AuthClient client = CN::AuthClient(); //Default port 5555
